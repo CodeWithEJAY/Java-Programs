@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // JAVA BANKING PROGRAM FOR BEGINNERS
+        // JAVA BANKING PROGRAM 
 
         double balance = 0;
         boolean isRunning = true;
