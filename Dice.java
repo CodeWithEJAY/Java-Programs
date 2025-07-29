@@ -12,7 +12,7 @@ public class Main {
         int numOfDice;
         int total = 0;
 
-        System.out.print("Enter the # of dice to roll: ");
+        System.out.print("Enter the number of dice to roll: ");
         numOfDice = scanner.nextInt();
 
         if(numOfDice > 0){
@@ -26,7 +26,7 @@ public class Main {
             System.out.println("Total: " + total);
         }
         else{
-            System.out.println("# of dice must be greater than 0");
+            System.out.println("Number of dice must be greater than 0");
         }
         
         scanner.close();
