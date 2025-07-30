@@ -42,7 +42,7 @@ public class Main {
             payout = getPayout(row, bet);
 
             if (payout > 0) {
-                System.out.println("You won $" + payout);
+                System.out.println("You won ₱" + payout);
                 balance += payout;
             }
             else {
