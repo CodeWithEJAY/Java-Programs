@@ -21,7 +21,7 @@ public class Main {
 
             String response = "";
 
-            while (!response.equals("Q")){
+            while (!response.equals("Q")) {
 
                 System.out.println("P = Play");
                 System.out.println("S = Stop");
@@ -40,16 +40,16 @@ public class Main {
                 }
             }
         }
-        catch (FileNotFoundException e){
+        catch (FileNotFoundException e) {
             System.out.println("Could not locate file");
         }
-        catch (UnsupportedAudioFileException e){
+        catch (UnsupportedAudioFileException e) {
             System.out.println("Audio file is not supported");
         }
-        catch (LineUnavailableException e){
+        catch (LineUnavailableException e) {
             System.out.println("Unable to access audio resource");
         }
-        catch (IOException e){
+        catch (IOException e) {
             System.out.println("Something went wrong");
         }
         finally {
