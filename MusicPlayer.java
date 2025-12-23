@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         // How to PLAY AUDIO with Java (.wav, .au, .aiff)
 
         String filePath = "src\\A Caring Friend.wav";
         File file = new File(filePath);
 
-        try(Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in);
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
 
             Clip clip = AudioSystem.getClip();
@@ -21,7 +21,7 @@ public class Main {
 
             String response = "";
 
-            while(!response.equals("Q")){
+            while (!response.equals("Q")){
 
                 System.out.println("P = Play");
                 System.out.println("S = Stop");
@@ -31,7 +31,7 @@ public class Main {
 
                 response = scanner.next().toUpperCase();
 
-                switch(response){
+                switch (response) {
                     case "P" -> clip.start();
                     case "S" -> clip.stop();
                     case "R" -> clip.setMicrosecondPosition(0);
@@ -40,19 +40,19 @@ public class Main {
                 }
             }
         }
-        catch(FileNotFoundException e){
+        catch (FileNotFoundException e){
             System.out.println("Could not locate file");
         }
-        catch(UnsupportedAudioFileException e){
+        catch (UnsupportedAudioFileException e){
             System.out.println("Audio file is not supported");
         }
-        catch(LineUnavailableException e){
+        catch (LineUnavailableException e){
             System.out.println("Unable to access audio resource");
         }
-        catch(IOException e){
+        catch (IOException e){
             System.out.println("Something went wrong");
         }
-        finally{
+        finally {
             System.out.println("Bye!");
         }
     }
