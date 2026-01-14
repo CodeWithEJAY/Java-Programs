@@ -8,13 +8,13 @@ public class Main {
 
     public static void main (String[] args) {
 
-        // How to PLAY AUDIO with Java (.wav, .au, .aiff)
 
-        String filePath = "src\\A Caring Friend.wav";
+
+        String filePath = "src\\Soapdish_-_Tensionado_(mp3.pm).wav";
         File file = new File(filePath);
 
         try (Scanner scanner = new Scanner(System.in);
-            AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
+             AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)) {
 
             Clip clip = AudioSystem.getClip();
             clip.open(audioStream);
