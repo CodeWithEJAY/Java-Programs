@@ -13,4 +13,5 @@ public class Lab1_PersonalInfo {
         System.out.println("Favorite Subject : " + favSubject);
     }
 }
+// Basic Syntax, Variables, and Displaying Values
 // My First Java Program - Personal Information Display
