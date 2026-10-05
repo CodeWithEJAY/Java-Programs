@@ -23,6 +23,6 @@ public class AverageNumbers {
         input.close();
     }
 }
-
+// AVERAGE OF n NUMBERS
 // Create simple Java program that asks a user how many numbers they would like to input, 
 // then enter those numbers one by one and take the average of those values.
